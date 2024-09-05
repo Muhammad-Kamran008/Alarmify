@@ -29,7 +29,6 @@ class AlarmsListActivity : AppCompatActivity(), OnToggleAlarmListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-
         val alarmRepository = AlarmRepository(application)
         val getAlarmsUseCase = GetAlarmsUseCase(alarmRepository)
         val scheduleAlarmUseCase = ScheduleAlarmUseCase(application)
